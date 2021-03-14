@@ -1,0 +1,32 @@
+1. echo $HADOOP_HOME
+  
+2. echo $JAVA_HOME
+  
+3. hadoop namenode -format
+
+4. hdfs dfs -ls /
+
+5. hdfs dfs -mkdir /usr/
+
+6. hdfs dfs -rmdir /usr2/
+
+7. hdfs dfs -help
+
+8. hdfs dfs -touchz /TextTest.txt
+
+9. echo "Hello World" | hdfs dfs -appendToFile - /Hello.txt
+
+10. hdfs dfs -cat /Hello.txt
+
+11. hdfs dfs -cp /Hello.txt /HelloHello.txt
+
+12. hdfs dfs -df -h
+
+13. hdfs dfs -du -s /Hello.txt
+
+14. hdfs dfs -find / -name Hello -print
+  (no output, was expecting a list of files with the word Hello in title)
+  
+15. hdfs dfs -mv /Hello.txt /usr/
+ 
+16. hdfs dfs -rm /TextTest.txt
